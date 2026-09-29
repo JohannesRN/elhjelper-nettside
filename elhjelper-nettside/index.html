@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ELHjelper – elektroverktøy i lomma. Kalkulatorer og læring for elektrikere, lærlinger og elever." />
+  <meta name="theme-color" content="#0B1F33" />
+  <title>ELHjelper – Elektroverktøy i lomma</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#heim" aria-label="ELHjelper – heim">
+        <img src="assets/logo.png" alt="ELHjelper logo" />
+        <span>ELHjelper</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Opne meny" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#heim">Heim</a>
+        <a href="#kalkulatorar">Kalkulatorar</a>
+        <a href="#laering">Læring</a>
+        <a href="#appen">Appen</a>
+        <a href="#stott" class="nav-support">Støtt ELHjelper</a>
+        <a href="#om">Om ELHjelper</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="heim">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">⚡ ELEKTROVERKTØY I LOMMA</div>
+          <h1>ELHjelper</h1>
+          <p class="hero-lead">Praktiske elektroverktøy og læring – samla på éin stad.</p>
+          <p class="hero-text">Bruk kalkulatorane direkte i nettlesaren, repeter elektroteori og finn nyttige formlar når du treng dei.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kalkulatorar">Sjå kalkulatorane</a>
+            <a class="btn btn-secondary" href="#appen">Last ned appen</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="assets/logo.png" alt="ELHjelper" />
+          <div class="hero-card-title">Elektroverktøy i lomma</div>
+          <div class="hero-card-subtitle">Kalkulatorar · Læring · Oppgåver</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kalkulatorar">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">KALKULATORAR</span>
+            <h2>Elektroverktøy du kan bruke med ein gong</h2>
+          </div>
+          <p>Alle utrekningane skjer direkte i nettlesaren. Du treng ikkje konto.</p>
+        </div>
+
+        <div class="calculator-grid">
+          <button class="calc-card" data-calc="ohm"><span class="calc-icon material-icons">functions</span><span><strong>Ohms lov</strong><small>U, R og I</small></span><b>→</b></button>
+          <button class="calc-card" data-calc="effekt"><span class="calc-icon material-icons">flash_on</span><span><strong>Effekt</strong><small>P = U × I</small></span><b>→</b></button>
+          <button class="calc-card" data-calc="energi"><span class="calc-icon material-icons">bolt</span><span><strong>Energiforbruk</strong><small>kWh</small></span><b>→</b></button>
+          <button class="calc-card" data-calc="trefase"><span class="calc-icon material-icons">electric_bolt</span><span><strong>Trefase</strong><small>Effekt og straum</small></span><b>→</b></button>
+          <button class="calc-card" data-calc="spenningsfall"><span class="calc-icon material-icons">swap_vert</span><span><strong>Spenningsfall</strong><small>1- og 3-fase</small></span><b>→</b></button>
+          <button class="calc-card" data-calc="cc"><span class="calc-icon material-icons">grid_3x3</span><span><strong>CC-avstand varmekabel</strong><small>CC og kabellengde</small></span><b>→</b></button>
+          <button class="calc-card" data-calc="kortslutning"><span class="calc-icon material-icons-round">warning_amber</span><span><strong>Kortslutningsstraum</strong><small>Ik og Z</small></span><b>→</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="laering">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">LÆRING</span>
+            <h2>Repeter når du treng det</h2>
+          </div>
+          <p>Same læringsområde som i ELHjelper-appen, tilpassa for nettlesaren.</p>
+        </div>
+        <div class="learning-grid">
+          <button class="learning-card" data-learning="grunnleggjande"><span>01</span><h3>Grunnleggjande elektro</h3><p>Volt, ampere, ohm, watt, kWh, AC/DC og serie- og parallellkobling.</p><b>Les meir →</b></button>
+          <button class="learning-card" data-learning="formlar"><span>02</span><h3>Formlar</h3><p>Ohms lov, effekt, trefase, kWh og spenningsfall.</p><b>Les meir →</b></button>
+          <button class="learning-card" data-learning="praksis"><span>03</span><h3>Elektro i praksis</h3><p>Ledere, kabeltverrsnitt, vern, jordfeilvern, nettsystem og IP-grad.</p><b>Les meir →</b></button>
+          <button class="learning-card" data-learning="oppgaver"><span>04</span><h3>Oppgåver</h3><p>Praktiske rekneoppgåver med svar slik at du kan kontrollere resultatet.</p><b>Start oppgåver →</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section support-section" id="stott">
+      <div class="container support-card">
+        <div class="support-copy">
+          <span class="section-kicker">STØTT ELHJELPER</span>
+          <h2>Hjelp oss å halde ELHjelper gratis og reklamefri</h2>
+          <p>ELHjelper er laga for å vere eit enkelt og nyttig elektroverktøy utan reklame. Dersom du ønskjer å støtte vidare utvikling og halde appen gratis, kan du gi eit valfritt bidrag.</p>
+        </div>
+        <a class="btn btn-support" href="https://buy.stripe.com/cNibJ17aU7XUgEA1Py4Ja01" target="_blank" rel="noopener">
+          <span class="material-icons">favorite</span> Støtt ELHjelper
+        </a>
+      </div>
+    </section>
+
+    <section class="section app-section" id="appen">
+      <div class="container app-panel">
+        <div>
+          <span class="section-kicker">ELHjelper-appen</span>
+          <h2>Ta ELHjelper med deg på mobilen</h2>
+          <p>Nettsida gir deg verktøya direkte i nettlesaren. Appen samlar dei same verktøya og læringsfunksjonane på mobilen.</p>
+          <div class="store-buttons">
+            <a class="store-button" href="https://apps.apple.com/no/app/elhjelper/id6813107510" target="_blank" rel="noopener">App Store</a>
+            <a class="store-button" href="https://play.google.com/store/apps/details?id=com.natvikit.elhjelper" target="_blank" rel="noopener">Google Play</a>
+          </div>
+        </div>
+        <div class="app-badge">
+          <img src="assets/logo.png" alt="ELHjelper app" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="om">
+      <div class="container about-grid">
+        <div>
+          <span class="section-kicker">OM ELHjelper</span>
+          <h2>Laga for elektrofaget</h2>
+          <p>ELHjelper er utvikla for elektrikere, lærlingar, elevar og andre som jobbar med eller lærer elektrofaget.</p>
+          <p>Målet er enkelt: nyttige elektroverktøy skal vere raske å finne og enkle å bruke.</p>
+        </div>
+        <div class="info-card">
+          <strong>Natvik Solutions</strong>
+          <span>Utviklar av ELHjelper</span>
+          <a href="mailto:info@natvikit.com">info@natvikit.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>© 2026 Natvik Solutions · ELHjelper</div>
+      <div class="footer-links">
+        <a href="#om">Om ELHjelper</a>
+        <a href="https://www.natvikit.com/personvern-elhjelper" target="_blank" rel="noopener">Personvern</a>
+        <a href="mailto:info@natvikit.com">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="calcModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Lukk">×</button>
+      <div id="calculatorContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
